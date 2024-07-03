@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@types/node": "^20.11.30",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/readline-sync": "^1.4.8"
+  },
+  "name": "the_hyrule_castle",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "mods": "tsc ./mods/hyrule_castle.ts && node ./mods/hyrule_castle.js && find . -type f -name '*.js' -not -path './node_modules/*' -delete",
+    "clear": "find . -type f -name '*.js' -not -path './node_modules/*' -delete",
+    "start": "tsc ./base_game/hyrule_castle.ts && node ./base_game/hyrule_castle.js && find . -type f -name '*.js' -not -path './node_modules/*' -delete",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
